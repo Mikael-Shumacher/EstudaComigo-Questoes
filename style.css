@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgb(24, 30, 41) 0.2%, rgba(10, 11, 26, 0.952) 99.7%, rgba(17, 17, 43, 0.897)) !important;
+}
+
+.menu {
+    background-image: linear-gradient(90deg, rgba(47, 71, 117, 0.945) 0.2%, rgba(0, 113, 128, 0.856) 99.7%, rgba(24, 25, 116, 0.897));
+    padding: 18px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#h1-logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+}
+
+#h2-logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(56, 255, 6);
+}
+
+.section {
+    font-family: "Bai Jamjuree", sans-serif;
+    padding: 40px;
+    margin-bottom: -40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.titulo {
+    color: rgb(23, 146, 228);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#h2-titulo {
+    font-size: 40px;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bai Jamjuree", sans-serif;
+    width: 70%;
+    /* height: 100vh; */
+}
+
+.card__container {
+    padding-block: 5rem;
+}
+
+.card__content {
+    margin-inline: 1.75rem;
+    border-radius: 1, 25rem;
+    overflow: hidden;
+}
+
+.card__article {
+    width: 100px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.card__image {
+    position: relative;
+    background-color: aqua;
+    padding-top: 1.5rem;
+    margin-bottom: -.75rem;
+}
+
+.card__data {
+    background-color: rgba(29, 123, 211, 0.432);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.card__img {
+    width: 400px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+}
+
+.card__name {
+    font-size: 18px;
+    color: rgb(27, 199, 199);
+    margin-bottom: .75rem;
+}
+
+.card__description {
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+}
+
+.card__button {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgba(255, 166, 0, 0.767);
+    padding: .75rem 1.5rem;
+    border-radius: .25rem;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.card__button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.767);
+    padding: .78rem 1.8rem;
+    transition: .2s;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '';
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: initial;
+    height: initial;
+    font-size: 3rem;
+    color: rgb(23, 23, 204);
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: hsl(212, 32%, 40%);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: burlywood;
+}
+
+@media screen and (max-width: 320px) {
+    .card__data {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card__data {
+        padding: 3rem;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .card__container {
+        max-width: 1120px;
+    }
+
+    .swiper-button-next {
+        right: -1rem;
+    }
+
+    .swiper-button-prev {
+        left: -1rem;
+    }
+}

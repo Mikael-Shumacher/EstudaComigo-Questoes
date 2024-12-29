@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+.menu {
+    background-image: linear-gradient(90deg, rgba(47, 71, 117, 0.945) 0.2%, rgba(0, 113, 128, 0.856) 99.7%, rgba(24, 25, 116, 0.897));
+    padding: 18px;
+    border-bottom: 2px solid rgb(30, 109, 6);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#h1-logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+}
+
+#h2-logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(238, 255, 6);
+}
+
+#voltar_home {
+    text-decoration: none;
+    color: currentColor;
+}
+
+#voltar_home:hover {
+    text-decoration: none;
+    color: currentColor;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgb(24, 30, 41) 0.2%, rgba(10, 11, 26, 0.952) 99.7%, rgba(17, 17, 43, 0.897)) !important;
+}
+
+.filtragem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100% !important;
+    max-width: 1350px;
+    padding: 5px;
+}
+
+.heading {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.start-screen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings {
+    padding: auto 80px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #ddd;
+    background-color: #1f2847a9;
+    border-radius: 10px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 5px;
+    text-transform: capitalize;
+}
+
+select {
+    background-color: rgb(0, 0, 0);
+    width: 150px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+#filtro {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#filtrar {
+    margin-left: 15px;
+    margin-right: 10px;
+    padding: 10px 25px;
+    border-radius: 8px;
+    background-color: rgb(21, 39, 88);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+#filtrar:hover {
+    transition: 0.3s;
+    padding: 11px 26px;
+    background-color: rgb(88, 156, 9);
+}
+
+#num-disciplina {
+    min-width: 50px;
+    max-width: 110px;
+    min-height: 30px;
+    max-height: 30px;
+}
+
+#num-conteudo {
+    min-width: 50px;
+    max-width: 100px;
+    min-height: 30px;
+    max-height: 30px;
+}
+
+#topico {
+    min-width: 50px;
+    max-width: 150px;
+    min-height: 30px;
+    max-height: 30px;
+    /* Tamanho mínimo para os selects */
+
+}
+
+.section-question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* Centraliza os elementos horizontalmente */
+    padding: 20px;
+    max-width: 100%;
+    /* Garante que respeite a largura da tela */
+    word-wrap: break-word;
+}
+
+.mov-questions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10px;
+    background-color: #119dd434;
+    width: 50% !important;
+    height: 30px;
+    max-width: 200px;
+    max-height: 50px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.DataQuestions {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 35px;
+}
+
+.data {
+    font-size: 18px;
+}
+
+.setas {
+    background-color: rgba(0, 255, 255, 0.562);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.setas:hover {
+    background-color: rgba(51, 255, 0, 0.562);
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    background-color: #33626865;
+    max-width: 100%;
+    border-radius: 10px;
+    display: inline-block;
+    /* Ajusta a largura ao conteúdo */
+}
+
+.enunciado {
+    background-color: #03145f65;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+    /* Tamanho base */
+    line-height: 1.5;
+    /* Espaçamento entre linhas */
+    word-wrap: break-word;
+    /* Quebra de linha automática */
+    white-space: normal;
+    /* Garante que o texto não fique em linha única */
+    padding: 15px;
+    /* Espaçamento interno */
+    margin: 10px 0;
+    /* Espaçamento externo */
+    border: 1px solid #ccc;
+    /* Borda opcional para organização */
+    border-radius: 5px;
+    /* Arredondamento da borda */
+    /* Cor de fundo leve */
+    display: inline-block;
+    /* Ajusta a largura ao conteúdo */
+    max-width: 100%;
+    /* Evita que ultrapasse os limites da tela */
+}
+
+.enunciado-imagem img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 30px;
+    height: 25px;
+    border: 0.5px solid #38618dad;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Efeito ao passar o mouse sobre o rádio */
+input[type="radio"]:hover {
+    transform: scale(1.1);
+    /* Aumenta o tamanho ao passar o mouse */
+}
+
+input[type="radio"]:checked {
+    background-color: #020e30;
+    border-color: #0056b3;
+    /* Cor da borda quando selecionado */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Efeito de brilho */
+}
+
+label[for] {
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.alternativas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 99%;
+    margin: 10px;
+}
+
+.alternativa {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border: 1px solid #9f9fb87e;
+    margin-bottom: 4px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    font-size: 14px;
+    /* Tamanho base */
+    line-height: 1.4;
+    /* Espaçamento entre linhas */
+    margin: 8px 0;
+    /* Espaçamento entre alternativas */
+    word-wrap: break-word;
+    /* Quebra de texto */
+    white-space: normal;
+    /* Flexbox para alinhamento */
+}
+
+.alternativa:hover {
+    background-color: rgba(0, 128, 0, 0.596);
+    cursor: pointer;
+}
+
+
+.enviar {
+    margin: 2px;
+    background-color: #03145f65;
+    width: 100% !important;
+    max-width: 100%;
+    max-height: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 10px;
+    background-color: #119dd434;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+}
+
+#envia {
+    background-color: rgba(97, 212, 20, 0.726);
+    padding: 8px 18px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+.alternativa.correta {
+    background-color: #149b14;
+    /* Verde claro para correta */
+}
+
+.alternativa.errada {
+    background-color: #fa0707;
+    /* Vermelho claro para errada */
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 1200px;
+        /* Define uma largura máxima */
+        margin: 0 auto;
+        /* Centraliza horizontalmente */
+        padding: 20px;
+        /* Adiciona espaçamento interno */
+        box-sizing: border-box;
+        /* Inclui padding e borda no tamanho total */
+    }
+
+    .settings {
+        flex-direction: column;
+        /* Empilha os itens em telas menores */
+        gap: 10px;
+        flex-wrap: nowrap;
+        /* Permite quebra de linha para itens que não cabem */
+        gap: 1px;
+        /* Espaço entre os itens */
+        align-items: center;
+        /* Centraliza os itens verticalmente */
+        justify-content: space-between;
+        /* Reduz espaço entre os itens */
+    }
+
+    #filtrar {
+        align-self: center;
+        /* Centraliza o botão */
+        width: 100%;
+        /* O botão ocupa a largura total */
+    }
+
+
+
+    .filtro-questoes {
+        flex-wrap: wrap;
+    }
+
+    .filtro-item {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}

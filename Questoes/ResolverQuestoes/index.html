@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estuda Cmg Questoes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+        integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</head>
+
+<body>
+    <header class="menu">
+        <div class="logo">
+            <a href="../../index.html" rel="prev" id="voltar_home">
+                <h1 id="h1-logo">ESTUDA COMIGO</h1>
+            </a>
+            <h2 id="h2-logo">Questões</h2>
+        </div>
+    </header>
+    <section class="filtragem">
+        <div class="container">
+            <div class="start-screen">
+                <div class="settings">
+                    <h2 id="filtro">Filtro de Questões </h2>
+                    <label for="num-banca">Banca</label>
+                    <select name="" id="num-banca">
+                        <option value="default">Nenhum</option>
+                        <option value="todos">Todos</option>
+                        <option value="ENEM">ENEM</option>
+                        <option value="ITA">ITA - Instituto Tecnológico de Aeronáutica</option>
+                        <option value="IME">IME - Instituto Militar de Engenharia</option>
+                        <option value="esa">ESA - A Escola de Sargentos das Armas</option>
+                        <option value="eear">EEAR - Escola de Especialistas de Aeronáutica</option>
+                        <option value="afa">AFA - Academia da Força Aérea</option>
+                        <option value="en">EN - Escola Naval</option>
+                        <option value="cn">CN - Colégio Naval</option>
+                        <option value="epcar">EPCAR - Escola Preparatória de Cadetes do Ar</option>
+                        <option value="prep">EsPCEx - Exército Brasileiro</option>
+                        <option value="fuv">FUVEST</option>
+                        <option value="ue">Universidades Estaduais</option>
+                        <option value="uf">Universidades Federais</option>
+                        <option value="uf">Institutos Federais</option>
+                        <option value="cm">Colégios Militares</option>
+                        <option value="COMUN">Comunidade</option>
+                    </select>
+                    <label for="num-disciplina">Disciplina</label>
+                    <select name="" id="num-disciplina">
+                        <option value="default">Nenhuma</option>
+                        <option value="mat">Matemática</option>
+                        <option value="fisica">Física</option>
+                        <option value="qui">Química</option>
+                        <option value="bio">Biologia</option>
+                        <option value="his-gr">História - Geral</option>
+                        <option value="his-br">História - Brasil</option>
+                        <option value="filo">Filosofia</option>
+                        <option value="socio">Sociologia</option>
+                        <option value="grama">Gramática</option>
+                        <option value="texto">Interpretação Textual</option>
+                        <option value="lit">Literatura</option>
+                    </select>
+                    <label for="num-conteudo">Conteúdo</label>
+                    <select name="" id="num-conteudo">
+                    </select>
+                    <label for="topico">Tópico</label>
+                    <select name="" id="topico">
+                    </select>
+                    <label for="num-disciplina">Dificuldade</label>
+                    <select name="" id="num-tipologia">
+                        <option value="normal">Todas</option>
+                        <option value="easy">Fácil</option>
+                        <option value="medium">Média</option>
+                        <option value="hard">Difícil</option>
+                    </select>
+                    <button id="filtrar">Filtrar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-question hide">
+        <div class="mov-questions">
+            <button id="prev" class="hide  setas"><i class="ri-arrow-left-wide-fill"></i></button>
+            <div class="DataQuestions">
+                <h3 class="questao-id data"></h3>
+                <h2 id="">|</h2>
+                <h3 class="banca data"></h3>
+                <h2 id="">|</h2>
+                <h3 class="ano data"></h3>
+            </div>
+            <button id="next" class="setas"><i class="ri-arrow-right-wide-fill"></i></button>
+        </div>
+        <div class="question">
+            <div class="enunciado">
+            </div>
+            <div class="alternativas">
+                <form name="escolha" method="post" action="">
+                    <div class="alternativa">
+                        <label id="alt-label">A</label>
+                        <input type="radio" id="alternativa-escolha" name="radiobutton" value="alt-A">
+                        <label for="A"></label><br>
+                    </div>
+                    <div class="alternativa">
+                        <label id="alt-label">B</label>
+                        <input type="radio" id="alternativa-escolha" name="radiobutton" value="alt-B">
+                        <label for="B"></label><br>
+                    </div>
+                    <div class="alternativa">
+                        <label id="alt-label">C</label>
+                        <input type="radio" id="alternativa-escolha" name="radiobutton" value="alt-C">
+                        <label for="C"></label><br>
+                    </div>
+                    <div class="alternativa">
+                        <label id="alt-label">D</label>
+                        <input type="radio" id="alternativa-escolha" name="radiobutton" value="alt-D">
+                        <label for="D"></label><br>
+                    </div>
+                    <div class="alternativa">
+                        <label id="alt-label">E</label>
+                        <input type="radio" id="alternativa-escolha" name="radiobutton" value="alt-E">
+                        <label for="E"></label><br>
+                    </div>
+                </form>
+            </div>
+            <div class="enviar hide">
+                <input type="submit" id="envia" name="Submit" value="Enviar">
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+    <script src="Questoes/dados.js"></script>
+</body>
+
+</html>
