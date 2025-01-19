@@ -87,6 +87,7 @@ body {
 }
 
 .card__data {
+    height: 180px;
     background-color: rgba(29, 123, 211, 0.432);
     padding: 1.5rem 2rem;
     text-align: center;
@@ -109,11 +110,14 @@ body {
 }
 
 .card__description {
+    height: 40px;
     font-weight: 500;
     margin-bottom: 1.75rem;
+    text-align: justify;
 }
 
 .card__button {
+    margin-top: 6px;
     font-family: 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
     display: inline-block;
@@ -142,6 +146,7 @@ body {
     height: initial;
     font-size: 3rem;
     color: rgb(23, 23, 204);
+    margin: -10px;
 }
 
 .swiper-button-prev {
@@ -162,9 +167,6 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-    .card__data {
-        padding: 1rem;
-    }
 
     #h2-titulo {
         font-size: 20px;
@@ -177,13 +179,10 @@ body {
         height: 50%;
     }
 
-    .card__data {
-        padding: 3rem;
-    }
-
     .swiper-button-next,
     .swiper-button-prev {
         display: block;
+        margin: -1px;
     }
 
     #h1-logo {
