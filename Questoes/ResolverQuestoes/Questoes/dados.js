@@ -5,14 +5,13 @@ const questoes = [
         ano: 2022,
         disciplina: "mat",
         conteudo: "algebra",
-        topico: "basico",
+        topico: "expressões",
         dificuldade: "easy",
         enunciado: `
-            <p></p>
-            <img src="Questoes/imgs-ENEM/qt1.png" alt="Imagem da questão" />
+            <p>O valor numérico da expressão ax + a² – a²x + ax² – 2x³ + 3a³, para a = 2 e x = 1, é:</p>
         `,
-        alternativas: ["A) 3", "B) 6", "C) 9", "D) 12", "E) Nenhuma"],
-        respostaCorreta: "B"
+        alternativas: ["A) 12", "B) 19", "C) 20", "D) 23", "E) 26"],
+        respostaCorreta: "E"
     },
     {
         id: 2,
@@ -20,14 +19,13 @@ const questoes = [
         ano: 2022,
         disciplina: "mat",
         conteudo: "algebra",
-        topico: "basico",
+        topico: "expressões",
         dificuldade: "easy",
         enunciado: `
-            <p>Qual é o valor da expressão abaixo?</p>
-            <img src="https://via.placeholder.com/300" alt="Imagem da questão" />
+            <p>Durante a resolução de exercícios sobre expressões algébricas, o professor pediu para que os alunos realizassem a simplificação da expressão 8(3 – 5x) + 4(3x – 6). Se a simplificação for feita  matematicamente, o polinômio encontrado será:</p>
         `,
-        alternativas: ["A) 1", "B) 2", "C) 3", "D) 4", "E) 5"],
-        respostaCorreta: "B"
+        alternativas: ["A) 28x + 24", "B) -12", "C) -14x + 12", "D) -28x", "E) 52x + 48"],
+        respostaCorreta: "D"
     },
     {
         id: 3,
