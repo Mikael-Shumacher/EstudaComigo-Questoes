@@ -165,9 +165,18 @@ body {
     .card__data {
         padding: 1rem;
     }
+
+    #h2-titulo {
+        font-size: 20px;
+    }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+    .swiper-wrapper {
+        width: 50%;
+        height: 50%;
+    }
+
     .card__data {
         padding: 3rem;
     }
@@ -176,9 +185,24 @@ body {
     .swiper-button-prev {
         display: block;
     }
+
+    #h1-logo {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
+    }
+
+    #h2-logo {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        color: rgb(238, 255, 6);
+    }
+
+    #h2-titulo {
+        font-size: 30px;
+    }
 }
 
-@media screen and (min-width: 1120px) {
+@media screen and (max-width: 1120px) {
     .card__container {
         max-width: 1120px;
     }
