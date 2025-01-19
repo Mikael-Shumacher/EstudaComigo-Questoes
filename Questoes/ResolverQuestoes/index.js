@@ -20,7 +20,7 @@ const data = {
 
 const topicosPorConteudo = {
     lógica: ["Proposições", "Operadores Lógicos", ""],
-    algebra: ["basico", "Eq.1Grau", "Equações do 2º Grau", "Logaritmos"],
+    algebra: ["Expressões", "Eq.1Grau", "Equações do 2º Grau", "Logaritmos"],
     geometria: ["Triângulos", "Circunferência", "Prismas"],
     calculo: ["Derivadas", "Integrais", "Limites"],
     mecânica: ["MRU", "MRUV", "Velocidade Escalar"],
@@ -221,15 +221,6 @@ function filtrarQuestoes() {
 }
 
 
-// Atualizar os botões de navegação com base no índice da questão
-function atualizarBotoesNavegacao() {
-    const prevButton = document.getElementById("prev");
-    const nextButton = document.getElementById("next");
-
-    // Oculta ou exibe os botões dependendo da posição atual no array filtrado
-    prevButton.classList.toggle("hide", questaoAtualIndex === 0);
-    nextButton.classList.toggle("hide", questaoAtualIndex === questoesFiltradas.length - 1);
-}
 
 document.getElementById("next").addEventListener("click", function () {
     if (questaoAtualIndex < questoesFiltradas.length - 1) {
