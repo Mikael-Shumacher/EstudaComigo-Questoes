@@ -52,11 +52,15 @@ body {
     justify-content: center;
 }
 
-.container {
-    width: 100% !important;
-    max-width: 1350px;
-    padding: 5px;
+.start-screen {
+    display: flex;
+    padding: auto 80px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
+
 
 .heading {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -65,24 +69,16 @@ body {
     margin-bottom: 30px;
 }
 
-.start-screen {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .settings {
-    padding: auto 80px;
+    display: inline;
     background-color: #f8f9fa;
     border-bottom: 2px solid #ddd;
     background-color: #1f2847a9;
     border-radius: 10px;
     margin-right: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    align-items: center;
     color: rgb(255, 255, 255);
+    padding: 10px;
 }
 
 label {
@@ -107,7 +103,7 @@ select {
 #filtro {
     margin-left: 15px;
     margin-right: 15px;
-    font-size: 20px;
+    font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -160,6 +156,7 @@ select {
     max-width: 100%;
     /* Garante que respeite a largura da tela */
     word-wrap: break-word;
+    margin-top: 20px;
 }
 
 .mov-questions {
@@ -209,7 +206,7 @@ select {
     flex-direction: column;
     margin-top: 10px;
     background-color: #33626865;
-    max-width: 100%;
+    width: 50%;
     border-radius: 10px;
     display: inline-block;
     /* Ajusta a largura ao conteúdo */
@@ -218,7 +215,7 @@ select {
 .enunciado {
     background-color: #03145f65;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 20px;
     width: 100%;
     /* Tamanho base */
     line-height: 1.5;
@@ -240,21 +237,21 @@ select {
     /* Ajusta a largura ao conteúdo */
     max-width: 100%;
     /* Evita que ultrapasse os limites da tela */
+    text-align: justify;
 }
 
 .enunciado-imagem img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     margin-bottom: 20px;
 }
 
 input[type="radio"] {
     appearance: none;
-    width: 30px;
+    width: 25px;
     height: 25px;
     border: 0.5px solid #38618dad;
     border-radius: 50%;
-    outline: none;
     cursor: pointer;
     background-color: #fff;
     transition: background-color 0.3s, transform 0.3s;
@@ -267,7 +264,7 @@ input[type="radio"]:hover {
 }
 
 input[type="radio"]:checked {
-    background-color: #020e30;
+    background-color: #1e960e;
     border-color: #0056b3;
     /* Cor da borda quando selecionado */
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
@@ -283,14 +280,17 @@ label[for] {
 .alternativas {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    width: 99%;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 90%;
     margin: 10px;
 }
 
 .alternativa {
     display: flex;
+    width: 98%;
+    max-height: 200px;
+    margin-right: 5px;
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
@@ -303,8 +303,6 @@ label[for] {
     /* Tamanho base */
     line-height: 1.4;
     /* Espaçamento entre linhas */
-    margin: 8px 0;
-    /* Espaçamento entre alternativas */
     word-wrap: break-word;
     /* Quebra de texto */
     white-space: normal;
@@ -360,36 +358,53 @@ label[for] {
 
 @media (max-width: 768px) {
 
-    .container {
-        max-width: 1200px;
-        /* Define uma largura máxima */
+    #h1-logo {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
+    }
+
+    #h2-logo {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        color: rgb(238, 255, 6);
+    }
+
+    .filtragem {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        max-width: 768px;
         margin: 0 auto;
-        /* Centraliza horizontalmente */
-        padding: 20px;
-        /* Adiciona espaçamento interno */
+    }
+
+    .start-screen {
+        display: grid;
         box-sizing: border-box;
-        /* Inclui padding e borda no tamanho total */
+        align-items: center;
+        justify-content: center;
+    }
+
+    #filtro {
+        font-size: 20px;
     }
 
     .settings {
+        padding: 20px;
+        display: grid;
         flex-direction: column;
-        /* Empilha os itens em telas menores */
-        gap: 10px;
         flex-wrap: nowrap;
-        /* Permite quebra de linha para itens que não cabem */
         gap: 1px;
-        /* Espaço entre os itens */
         align-items: center;
-        /* Centraliza os itens verticalmente */
         justify-content: space-between;
-        /* Reduz espaço entre os itens */
+        border: 2px solid #ddd;
+    }
+
+    #text-cont {
+        margin-top: 15px;
     }
 
     #filtrar {
-        align-self: center;
-        /* Centraliza o botão */
-        width: 100%;
-        /* O botão ocupa a largura total */
+        margin-top: 10px;
     }
 
 
@@ -401,5 +416,53 @@ label[for] {
     .filtro-item {
         margin-right: 10px;
         margin-bottom: 10px;
+    }
+
+
+    .question {
+        width: 100%;
+    }
+
+    .enunciado {
+        display: flex;
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .enunciado-imagem img {
+        display: flex;
+        max-width: 50%;
+        width: 80px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .alternativas {
+        width: auto;
+        margin: 10px;
+        font-size: 9px;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+        /* Empilha os itens em telas menores */
+        flex-wrap: nowrap;
+        /* Permite quebra de linha para itens que não cabem */
+        gap: 1px;
+        /* Centraliza os itens verticalmente */
+        justify-content: space-between;
+        /* Reduz espaço entre os itens */
+    }
+
+    .alternativa {
+        padding: 5px;
+        font-size: 9px;
+        /* Tamanho base */
+        line-height: 1.0;
+        /* Espaçamento entre linhas */
+        /* Espaçamento entre alternativas */
+        word-wrap: break-word;
+        /* Quebra de texto */
+        white-space: normal;
+        /* Flexbox para alinhamento */
     }
 }
