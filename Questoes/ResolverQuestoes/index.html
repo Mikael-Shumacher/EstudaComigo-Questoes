@@ -25,67 +25,64 @@
         </div>
     </header>
     <section class="filtragem">
-        <div class="container">
-            <div class="start-screen">
-                <div class="settings">
-                    <h2 id="filtro">Filtro de Questões </h2>
-                    <label for="num-banca">Banca</label>
-                    <select name="" id="num-banca">
-                        <option value="default">Nenhum</option>
-                        <option value="todos">Todos</option>
-                        <option value="ENEM">ENEM</option>
-                        <option value="ITA">ITA - Instituto Tecnológico de Aeronáutica</option>
-                        <option value="IME">IME - Instituto Militar de Engenharia</option>
-                        <option value="esa">ESA - A Escola de Sargentos das Armas</option>
-                        <option value="eear">EEAR - Escola de Especialistas de Aeronáutica</option>
-                        <option value="afa">AFA - Academia da Força Aérea</option>
-                        <option value="en">EN - Escola Naval</option>
-                        <option value="cn">CN - Colégio Naval</option>
-                        <option value="epcar">EPCAR - Escola Preparatória de Cadetes do Ar</option>
-                        <option value="prep">EsPCEx - Exército Brasileiro</option>
-                        <option value="fuv">FUVEST</option>
-                        <option value="ue">Universidades Estaduais</option>
-                        <option value="uf">Universidades Federais</option>
-                        <option value="uf">Institutos Federais</option>
-                        <option value="cm">Colégios Militares</option>
-                        <option value="COMUN">Comunidade</option>
-                    </select>
-                    <label for="num-disciplina">Disciplina</label>
-                    <select name="" id="num-disciplina">
-                        <option value="default">Nenhuma</option>
-                        <option value="mat">Matemática</option>
-                        <option value="fisica">Física</option>
-                        <option value="qui">Química</option>
-                        <option value="bio">Biologia</option>
-                        <option value="his-gr">História - Geral</option>
-                        <option value="his-br">História - Brasil</option>
-                        <option value="filo">Filosofia</option>
-                        <option value="socio">Sociologia</option>
-                        <option value="grama">Gramática</option>
-                        <option value="texto">Interpretação Textual</option>
-                        <option value="lit">Literatura</option>
-                    </select>
-                    <label for="num-conteudo">Conteúdo</label>
-                    <select name="" id="num-conteudo">
-                    </select>
-                    <label for="topico">Tópico</label>
-                    <select name="" id="topico">
-                    </select>
-                    <label for="num-disciplina">Dificuldade</label>
-                    <select name="" id="num-tipologia">
-                        <option value="normal">Todas</option>
-                        <option value="easy">Fácil</option>
-                        <option value="medium">Média</option>
-                        <option value="hard">Difícil</option>
-                    </select>
-                    <button id="filtrar">Filtrar</button>
-                </div>
+        <div class="start-screen">
+            <h3 id="filtro">Filtro de Questões </h3>
+            <div class="settings">
+                <label id="text-cont" for="num-banca">Banca</label>
+                <select name="" id="num-banca">
+                    <option value="default">Nenhum</option>
+                    <option value="todos">Todos</option>
+                    <option value="ENEM">ENEM</option>
+                    <option value="ITA">ITA - Instituto Tecnológico de Aeronáutica</option>
+                    <option value="IME">IME - Instituto Militar de Engenharia</option>
+                    <option value="esa">ESA - A Escola de Sargentos das Armas</option>
+                    <option value="eear">EEAR - Escola de Especialistas de Aeronáutica</option>
+                    <option value="afa">AFA - Academia da Força Aérea</option>
+                    <option value="en">EN - Escola Naval</option>
+                    <option value="cn">CN - Colégio Naval</option>
+                    <option value="epcar">EPCAR - Escola Preparatória de Cadetes do Ar</option>
+                    <option value="prep">EsPCEx - Exército Brasileiro</option>
+                    <option value="fuv">FUVEST</option>
+                    <option value="ue">Universidades Estaduais</option>
+                    <option value="uf">Institutos Federais</option>
+                    <option value="cm">Colégios Militares</option>
+                    <option value="COMUN">Comunidade</option>
+                </select>
+                <label id="text-cont" for="num-disciplina">Disciplina</label>
+                <select name="" id="num-disciplina">
+                    <option value="default">Nenhuma</option>
+                    <option value="mat">Matemática</option>
+                    <option value="fisica">Física</option>
+                    <option value="qui">Química</option>
+                    <option value="bio">Biologia</option>
+                    <option value="his-gr">História - Geral</option>
+                    <option value="his-br">História - Brasil</option>
+                    <option value="filo">Filosofia</option>
+                    <option value="socio">Sociologia</option>
+                    <option value="grama">Gramática</option>
+                    <option value="texto">Interpretação Textual</option>
+                    <option value="lit">Literatura</option>
+                </select>
+                <label id="text-cont" for="num-conteudo">Conteúdo</label>
+                <select name="" id="num-conteudo">
+                </select>
+                <label id="text-cont" for="topico">Tópico</label>
+                <select name="" id="topico">
+                </select>
+                <label id="text-cont" for="num-disciplina">Dificuldade</label>
+                <select name="" id="num-tipologia">
+                    <option value="normal">Todas</option>
+                    <option value="easy">Fácil</option>
+                    <option value="medium">Média</option>
+                    <option value="hard">Difícil</option>
+                </select>
+                <button id="filtrar">Filtrar</button>
             </div>
         </div>
     </section>
     <section class="section-question hide">
         <div class="mov-questions">
-            <button id="prev" class="hide  setas"><i class="ri-arrow-left-wide-fill"></i></button>
+            <button id="prev" class="setas"><i class="ri-arrow-left-wide-fill"></i></button>
             <div class="DataQuestions">
                 <h3 class="questao-id data"></h3>
                 <h2 id="">|</h2>
