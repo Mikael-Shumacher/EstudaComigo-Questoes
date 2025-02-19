@@ -1,8 +1,8 @@
 <strong>[EstudaComigo]</strong> <i>is the free platform that puts you on the way to success! Here you find everything you need to boost your studies, in an organized and efficient way:</i>
 
-<strong>->Question Bank:</strong> Thousands of exercises to test your knowledge and identify your weaknesses.<br>
-<strong>->Schedule and Task Manager:</strong> Organize your studies efficiently, setting goals and following your progress.<br>
-<strong>->Realistic simulations:</strong> Get ready for tests and competitions with simulations that put you in real test situations.<br>
+<strong>-><i>Question Bank:</i></strong> Thousands of exercises to test your knowledge and identify your weaknesses.<br>
+<strong>-><i>Schedule and Task Manager:</i></strong> Organize your studies efficiently, setting goals and following your progress.<br>
+<strong>-><i>Realistic simulations:</i></strong> Get ready for tests and competitions with simulations that put you in real test situations.<br>
 
 URL website: https://mikael-shumacher.github.io/EstudaComigo-Questoes/
 
