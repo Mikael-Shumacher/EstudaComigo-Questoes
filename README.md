@@ -2,4 +2,4 @@ A free study website with a most varied question bank and an automatic schedule 
 
 URL website: https://mikael-shumacher.github.io/EstudaComigo-Questoes/
 
-<img src="">
+<img src="assets/imgReadme/Screenshot 2025-02-19 111518.png">
