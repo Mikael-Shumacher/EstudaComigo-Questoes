@@ -1,4 +1,10 @@
-A free study website with a most varied question bank and an automatic schedule system for the management of your studies.
+[EstudaComigo] is the free platform that puts you on the way to success! Here you find everything you need to boost your studies, in an organized and efficient way:
+
+Question Bank: Thousands of exercises to test your knowledge and identify your weaknesses.
+
+Schedule and Task Manager: Organize your studies efficiently, setting goals and following your progress.
+
+Realistic simulations: Get ready for tests and competitions with simulations that put you in real test situations.
 
 URL website: https://mikael-shumacher.github.io/EstudaComigo-Questoes/
 
