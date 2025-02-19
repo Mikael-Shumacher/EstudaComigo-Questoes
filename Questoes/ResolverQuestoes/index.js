@@ -8,10 +8,10 @@ let questaoAtualIndex = 0;
 
 const data = {
     mat: {
-        conteudos: ["Lógica", "Algebra", "Geometria", "Trigonometria", "Calculo"],
+        conteudos: ["Lógica", "Álgebra", "Combinatória", "Geometria", "Trigonometria", "Matrizes", "Calculo"],
     },
     fisica: {
-        conteudos: ["Mecânica", "Termodinâmica", "Eletricidade"],
+        conteudos: ["Vetores", "Mecânica", "Termodinâmica", "Eletricidade"],
     },
     qui: {
         conteudos: ["Fundamentos", "Química Orgânica", "Química Inorgânica"],
@@ -19,12 +19,15 @@ const data = {
 }
 
 const topicosPorConteudo = {
-    lógica: ["Proposições", "Operadores Lógicos", ""],
-    algebra: ["Expressões", "Eq.1Grau", "Equações do 2º Grau", "Logaritmos"],
+    lógica: ["Proposições", "Operadores Lógicos", "Problemas"],
+    álgebra: ["Expressões", "Progressões", "Eq.1Grau", "Equações do 2º Grau", "Logaritmos"],
     geometria: ["Triângulos", "Circunferência", "Prismas"],
     calculo: ["Derivadas", "Integrais", "Limites"],
+    vetores: ["Grandezas", "Análise vetorial", "Deslocamento"],
     mecânica: ["MRU", "MRUV", "Velocidade Escalar"],
-    fundamentos: ["Matéria", "Energia", "Fases de Agregação"]
+    fundamentos: ["Matéria", "Energia", "Fases de Agregação"],
+    combinatória: ["Problemas", "PFC", "Princípio Aditivo", "Binômio"],
+    matrizes: ["Determinantes", "Inversas"]
 };
 
 bancaSelect.addEventListener('change', () => {

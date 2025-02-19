@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estuda Cmg Questoes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+        integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="menu">
+        <div class="logo">
+            <a href="../../index.html" rel="prev" id="voltar_home">
+                <h1 id="h1-logo">ESTUDA COMIGO</h1>
+            </a>
+            <h2 id="h2-logo">Cronograma</h2>
+        </div>
+    </header>
+    <div class="container">
+        <nav class="bar1">
+            <ul>
+                <li>
+                    <a id="icons" href="../calendar/index.html">
+                        <ion-icon name="calendar"></ion-icon>
+                        <span>Calendário</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="icons" href="../index.html">
+                        <ion-icon name="list"></ion-icon>
+                        <span>Cronograma</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a id="icons" href="index.html">
+                        <ion-icon name="checkbox"></ion-icon>
+                        <span>Tarefas</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main class="kanban">
+        <!-- Coluna 1 -->
+        <div class="kanban-column" data-id="1">
+            <div class="kanban-title">
+                <h2>
+                    Pendente
+                </h2>
+                <button class="add-card">
+                    <ion-icon name="add"></ion-icon>
+                </button>
+            </div>
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="bagde high">
+                        <span>
+                            Alta prioridade
+                        </span>
+                    </div>
+                    <p class="card-title">
+                        ter vida pessoal
+                    </p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <button class="edit btn-icon"><ion-icon name="create-outline"
+                                    id="ionicon"></ion-icon></ion-icon></button>
+                            <button class="delete btn-icon"><ion-icon name="trash-outline"
+                                    id="ionicon"></ion-icon></ion-icon></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Coluna 2 -->
+        <div class="kanban-column" data-id="2">
+            <div class="kanban-title">
+                <h2>
+                    25%
+                </h2>
+                <button class="add-card">
+                    <ion-icon name="add"></ion-icon>
+                </button>
+            </div>
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="bagde high">
+                        <span>
+                            Alta prioridade
+                        </span>
+                    </div>
+                    <p class="card-title">
+                        Assitir como treinar seu dragao
+                    </p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <button class="edit btn-icon"><ion-icon name="create-outline"
+                                    id="ionicon"></ion-icon></ion-icon></button>
+                            <button class="delete btn-icon"><ion-icon name="trash-outline"
+                                    id="ionicon"></ion-icon></ion-icon></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Coluna 3 -->
+        <div class="kanban-column" data-id="3">
+            <div class="kanban-title">
+                <h2>
+                    50%
+                </h2>
+                <button class="add-card">
+                    <ion-icon name="add"></ion-icon>
+                </button>
+            </div>
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="bagde medium">
+                        <span>
+                            Medio prioridade
+                        </span>
+                    </div>
+                    <p class="card-title">
+                        Estudar para o concurso de Xique-Xique BA
+                    </p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <button class="edit btn-icon"><ion-icon name="create-outline"
+                                    id="ionicon"></ion-icon></ion-icon></button>
+                            <button class="delete btn-icon"><ion-icon name="trash-outline"
+                                    id="ionicon"></ion-icon></ion-icon></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Coluna 4 -->
+        <div class="kanban-column" data-id="4">
+            <div class="kanban-title">
+                <h2>
+                    75%
+                </h2>
+                <button class="add-card">
+                    <ion-icon name="add"></ion-icon>
+                </button>
+            </div>
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="bagde low">
+                        <span>
+                            Baixa prioridade
+                        </span>
+                    </div>
+                    <p class="card-title">
+                        encontrar um namorada
+                    </p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <button class="edit btn-icon"><ion-icon name="create-outline"
+                                    id="ionicon"></ion-icon></ion-icon></button>
+                            <button class="delete btn-icon"><ion-icon name="trash-outline"
+                                    id="ionicon"></ion-icon></ion-icon></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Coluna 5-->
+        <div class="kanban-column" data-id="5">
+            <div class="kanban-title">
+                <h2>
+                    Concluido
+                </h2>
+                <button class="add-card">
+                    <ion-icon name="add"></ion-icon>
+                </button>
+            </div>
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="bagde high">
+                        <span>
+                            Alta prioridade
+                        </span>
+                    </div>
+                    <p class="card-title">
+                        Ler como cagar no mato
+                    </p>
+                    <div class="card-infos">
+                        <div class="card-icons">
+                            <button class="edit btn-icon"><ion-icon name="create-outline"
+                                    id="ionicon"></ion-icon></ion-icon></button>
+                            <button class="delete btn-icon"><ion-icon name="trash-outline"
+                                    id="ionicon"></ion-icon></ion-icon></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

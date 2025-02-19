@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgb(24, 30, 41) 0.2%, rgba(10, 11, 26, 0.952) 99.7%, rgba(17, 17, 43, 0.897)) !important;
+}
+
+.menu {
+    background-image: linear-gradient(90deg, rgba(47, 71, 117, 0.945) 0.2%, rgba(0, 113, 128, 0.856) 99.7%, rgba(24, 25, 116, 0.897));
+    padding: 18px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#h1-logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+}
+
+#h2-logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(238, 255, 6);
+}
+
+#voltar_home {
+    text-decoration: none;
+    color: currentColor;
+}
+
+#voltar_home:hover {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-top: 5px;
+}
+
+nav {
+    position: relative;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: rgba(73, 69, 69, 0.534);
+    border-radius: 10px;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+}
+
+#icons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+ion-icon {
+    font-size: 30px;
+    border-radius: 5px;
+    transition: all;
+}
+
+#icons:hover ion-icon,
+#icons:hover span {
+    transition: color 0.3s ease;
+
+    color: rgb(27, 194, 194);
+    /* Muda a cor do ícone e do texto */
+}
+
+nav ul li.active ion-icon,
+nav ul li.active span {
+    color: aqua;
+    /* Altera a cor do ícone especificamente */
+}
+
+.bar1 li.active:hover a {
+    color: aqua;
+}
+
+.bar1 li:hover a,
+.bar1 li.active a {
+    transform: translateY(-10px);
+}
+
+
+
+.kanban {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 24px;
+    width: 100%;
+    height: 75vh;
+    overflow-x: auto;
+
+}
+
+.kanban-column {
+    font-family: 'Poppins';
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    min-width: 300px;
+    max-width: 350px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #1e438d86;
+    border-radius: 12px;
+    box-shadow: 0px 10px 15px -3px rgba(10, 11, 26, 0.952);
+    padding: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.kanban-column::after {
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.kanban-column[data-id="1"]::after {
+    background-color: #d33737;
+}
+
+.kanban-column[data-id="2"]::after {
+    background-color: #966227;
+}
+
+.kanban-column[data-id="3"]::after {
+    background-color: #bbd573;
+}
+
+.kanban-column[data-id="4"]::after {
+    background-color: #679b14;
+}
+
+.kanban-column[data-id="5"]::after {
+    background-color: #4cf00b;
+}
+
+.kanban-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kanban-title h2 {
+    font-size: 18px;
+    color: #dce1e9;
+    font-weight: 600;
+}
+
+.add-card {
+    color: #4b5563;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.add-card:hover {
+    transition: all 0.4s;
+    font-size: 30px;
+}
+
+#ionicon {
+    font-size: 20px;
+}
+
+.btn-icon {
+    color: #4b5563;
+    font-size: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-icon:hover {
+    transition: all 0.4s;
+    transform: translateY(-10px)
+}
+
+.kanban-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.kanban-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #979393bd;
+    border-radius: 14px;
+    padding: 10px;
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+.cards-hover {
+    transition: all 0.4s;
+    background-color: #eaeffa6c;
+    border-radius: 8px;
+}
+
+.bagde {
+    color: #368b14c7;
+    width: fit-content;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+
+.bagde.high {
+    background-color: #af2323;
+}
+
+.bagde.medium {
+    background-color: #966227;
+}
+
+.bagde.low {
+    background-color: #273296;
+}
+
+.card-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-icons {
+    display: flex;
+    gap: 18px;
+}
+
+.user img {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #eaeffa;
+    border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #188a8a;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 320px) {
+    #h2-titulo {
+        font-size: 20px;
+    }
+
+    .kanban-column {
+        min-width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #h1-logo {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
+    }
+
+    #h2-logo {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        color: rgb(238, 255, 6);
+    }
+
+    #h2-titulo {
+        font-size: 30px;
+    }
+
+    .kanban {
+        display: grid;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 14px;
+        padding: 24px;
+        width: 100%;
+        height: 90vh;
+        overflow-x: auto;
+
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    #h1-logo {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
+    }
+
+    #h2-logo {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        color: rgb(238, 255, 6);
+    }
+
+    #h2-titulo {
+        font-size: 30px;
+    }
+
+    .kanban {
+        display: grid;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 14px;
+        padding: 24px;
+        width: 100%;
+        height: 90vh;
+        overflow-x: auto;
+
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .card__container {
+        max-width: 1120px;
+    }
+}
