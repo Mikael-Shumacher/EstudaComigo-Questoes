@@ -1,4 +1,4 @@
-<strong>[EstudaComigo]</strong> <i>is the free platform that puts you on the way to success! Here you find everything you need to boost your studies, in an organized and efficient way:</i>
+<h1><strong>[EstudaComigo]</strong></h1>h1> <i>is the free platform that puts you on the way to success! Here you find everything you need to boost your studies, in an organized and efficient way:</i>
 
 <strong>-><i>Question Bank:</i></strong> Thousands of exercises to test your knowledge and identify your weaknesses.<br>
 <strong>-><i>Schedule and Task Manager:</i></strong> Organize your studies efficiently, setting goals and following your progress.<br>
