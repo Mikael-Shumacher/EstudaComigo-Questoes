@@ -1,4 +1,4 @@
-[EstudaComigo] is the free platform that puts you on the way to success! Here you find everything you need to boost your studies, in an organized and efficient way:
+<i>[EstudaComigo] is the free platform that puts you on the way to success! Here you find everything you need to boost your studies, in an organized and efficient way:</i>
 
 <strong>->Question Bank:</strong> Thousands of exercises to test your knowledge and identify your weaknesses.<br>
 <strong>->Schedule and Task Manager:</strong> Organize your studies efficiently, setting goals and following your progress.<br>
