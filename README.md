@@ -14,4 +14,4 @@ Other page tools:
 <img src="assets/imgReadme/Screenshot 2025-02-19 111923.png">
 
 Search questions:
-<img src="assets/imgReadme/Screenshot 2025-02-19 111923.png">
+<img src="https://github.com/Mikael-Shumacher/EstudaComigo-Questoes/blob/main/assets/imgReadme/Screenshot%202025-07-23%20at%2019-19-03%20Estuda%20Cmg%20Questoes.png">
